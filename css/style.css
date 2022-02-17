@@ -522,10 +522,73 @@ hr {
   margin: 21.59px auto 40px;
 }
 .slider {
+  position: relative;
+  display: flex;
   margin: 10px auto 10px;
   width: 1440px;
-  height: 305px;
-  background-color: #ff4a32;
+}
+.slider img {
+  border-radius: 60px;
+}
+.product {
+  display: inline-block;
+  margin: 0 10px;
+  width: 185.7px;
+  text-align: center;
+}
+
+.product:hover {
+  border-radius: 60px;
+  box-shadow: 2px 2px 20px #ff4a32;
+}
+.product_name {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ff4a32;
+}
+.price_min {
+  font-size: 14px;
+  line-height: 18px;
+  color: #373737;
+}
+.price_max {
+  padding-left: 4px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff2121;
+}
+.sold_out {
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.slider_button {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.75);
+}
+#left_arrow {
+  position: absolute;
+  top: 130px;
+}
+#right_arrow {
+  position: absolute;
+  top: 130px;
+  right: 10px;
+}
+
+#right_arrow img {
+  transform: rotate(180deg);
+}
+
+.shadow_under_slider {
+  width: 100%;
+  height: 46px;
+  margin: 0 auto;
+  box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
 }
 /* LOOKING FOR ACCESSORIES --- END */
 
@@ -588,7 +651,7 @@ hr {
 /* BENEFITS --- END */
 
 /* FOOTER --- START */
-/* FOOETR WITH GRAY BACKGROUND --- START */
+/* FOOTER WITH GRAY BACKGROUND --- START */
 .footer_gray_background {
   width: 100%;
   background: #f7f7f7;
@@ -647,9 +710,9 @@ hr {
 .about p:nth-child(3) {
   margin: 19px 0 0 0;
 }
-/* FOOETR WITH GRAY BACKGROUND --- END */
+/* FOOTER WITH GRAY BACKGROUND --- END */
 
-/* FOOETR WITH WHITE BACKGROUND --- START */
+/* FOOTER WITH WHITE BACKGROUND --- START */
 .footer_white_background {
   width: 100%;
   background-color: #ffffff;
@@ -679,6 +742,6 @@ hr {
   display: inline-block;
 }
 
-/* FOOETR WITH WHITE BACKGROUND --- END */
+/* FOOTER WITH WHITE BACKGROUND --- END */
 
 /* FOOTER --- END */
